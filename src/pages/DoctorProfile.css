@@ -1,0 +1,132 @@
+/* Doctor Profile Page */
+.profile-back {
+  margin-bottom: var(--space-lg);
+}
+
+.profile-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: var(--space-md);
+  text-align: center;
+}
+
+.profile-not-found span {
+  font-size: 4rem;
+}
+
+.doctor-profile-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.doctor-profile-card {
+  text-align: center;
+  padding: var(--space-xl);
+  position: sticky;
+  top: calc(var(--topbar-height) + var(--space-lg));
+}
+
+.dp-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 auto var(--space-md);
+  box-shadow: 0 8px 24px rgba(27, 111, 227, 0.25);
+}
+
+.dp-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.dp-spec {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+}
+
+.dp-stats-row {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xl);
+  padding: var(--space-lg) 0;
+  margin: var(--space-md) 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.dp-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.dp-stat-num {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.dp-stat-label {
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.dp-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  margin-top: var(--space-md);
+}
+
+.dp-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.dp-detail-icon {
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.doctor-profile-content .section-header {
+  margin-bottom: var(--space-md);
+}
+
+.doctor-profile-content .section-header h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .doctor-profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-profile-card {
+    position: static;
+  }
+}

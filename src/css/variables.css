@@ -1,0 +1,109 @@
+/* ========================================
+   CSS Custom Properties / Design Tokens
+   ======================================== */
+:root {
+  /* Primary Colors */
+  --primary: #1B6FE3;
+  --primary-hover: #1559B8;
+  --primary-light: #E8F1FD;
+  --primary-dark: #0E4A9E;
+
+  /* Accent */
+  --accent: #0EA5E9;
+  --accent-light: #E0F2FE;
+
+  /* Semantic Colors */
+  --success: #10B981;
+  --success-light: #D1FAE5;
+  --warning: #F59E0B;
+  --warning-light: #FEF3C7;
+  --danger: #EF4444;
+  --danger-light: #FEE2E2;
+  --info: #8B5CF6;
+  --info-light: #EDE9FE;
+
+  /* Backgrounds */
+  --bg: #F0F4F8;
+  --bg-secondary: #E2E8F0;
+  --surface: #FFFFFF;
+  --surface-hover: #F8FAFC;
+
+  /* Text */
+  --text: #1E293B;
+  --text-secondary: #64748B;
+  --text-tertiary: #94A3B8;
+  --text-inverse: #FFFFFF;
+
+  /* Borders */
+  --border: #E2E8F0;
+  --border-light: #F1F5F9;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Sidebar */
+  --sidebar-width: 260px;
+  --sidebar-collapsed: 72px;
+  --topbar-height: 70px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Font */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ========================================
+   Dark Mode Overrides
+   ======================================== */
+html.dark {
+  --primary: #3B82F6;
+  --primary-hover: #2563EB;
+  --primary-light: #1E3A5F;
+  --primary-dark: #60A5FA;
+
+  --accent: #38BDF8;
+  --accent-light: #0C4A6E;
+
+  --success-light: #064E3B;
+  --warning-light: #78350F;
+  --danger-light: #7F1D1D;
+  --info-light: #4C1D95;
+
+  --bg: #0F172A;
+  --bg-secondary: #1E293B;
+  --surface: #1E293B;
+  --surface-hover: #334155;
+
+  --text: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-tertiary: #64748B;
+
+  --border: #334155;
+  --border-light: #1E293B;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,187 @@
+/* Patient Profile Page */
+.patient-profile-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.patient-profile-card {
+  text-align: center;
+  padding: var(--space-xl);
+  position: sticky;
+  top: calc(var(--topbar-height) + var(--space-lg));
+}
+
+.pp-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), #38BDF8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 auto var(--space-md);
+  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.25);
+}
+
+.pp-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.pp-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: var(--space-lg) 0;
+  padding: var(--space-md) 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.pp-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pp-info-label {
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.pp-info-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.pp-details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.pp-detail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.pp-detail-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.pp-detail-label {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.pp-detail-value {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Assigned Doctor Card */
+.assigned-doctor-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md);
+  background: var(--bg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.adc-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.adc-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.adc-info h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.adc-spec {
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.adc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.adc-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.patient-profile-content .section-header {
+  margin-bottom: var(--space-md);
+}
+
+.patient-profile-content .section-header h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .patient-profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-profile-card {
+    position: static;
+  }
+
+  .assigned-doctor-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .adc-right {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,20 @@
+.layout-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  margin-left: var(--sidebar-width);
+  margin-top: var(--topbar-height);
+  flex: 1;
+  padding: var(--space-lg);
+  min-height: calc(100vh - var(--topbar-height));
+  transition: margin-left var(--transition-base);
+  background: var(--bg);
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
