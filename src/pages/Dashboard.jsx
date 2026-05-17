@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { dashboardCards } from '../data/dashboardStats';
 import { mockAppointments } from '../data/appointments';
-import { mockActivityLogs } from '../data/activityLogs';
+
 import './Dashboard.css';
 
 const containerVariants = {
@@ -16,7 +16,7 @@ const cardVariants = {
 
 export default function Dashboard() {
   const recentAppointments = mockAppointments.slice(0, 5);
-  const recentActivity = mockActivityLogs.slice(0, 5);
+
 
   const getStatusBadge = (status) => {
     const map = {
@@ -85,25 +85,6 @@ export default function Dashboard() {
           </div>
         </motion.div>
 
-        <motion.div className="recent-activity card" variants={cardVariants}>
-          <div className="section-header">
-            <h3>Recent Activity</h3>
-          </div>
-          <div className="activity-feed">
-            {recentActivity.map((log) => (
-              <div className="activity-item" key={log.id}>
-                <div className="activity-icon">{log.icon}</div>
-                <div className="activity-details">
-                  <p className="activity-action">{log.action}</p>
-                  <p className="activity-desc">{log.description}</p>
-                  <span className="activity-time">
-                    {new Date(log.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </motion.div>
   );

@@ -62,14 +62,10 @@ export function AuthProvider({ children }) {
     localStorage.removeItem('hospitalUser');
   };
 
-  const updateProfile = (updates) => {
-    const updated = { ...user, ...updates };
-    setUser(updated);
-    localStorage.setItem('hospitalUser', JSON.stringify(updated));
-  };
+
 
   return (
-    <AuthContext.Provider value={{ user, isAuthenticated, login, signup, logout, updateProfile }}>
+    <AuthContext.Provider value={{ user, isAuthenticated, login, signup, logout }}>
       {children}
     </AuthContext.Provider>
   );
